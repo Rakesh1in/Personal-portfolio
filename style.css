@@ -21,6 +21,10 @@
     border: none;
     outline: none;
 }
+.typing-text {
+    color: var(--global-clr);
+    font-weight: 600;
+}
 
 
 /* html and body styles */
