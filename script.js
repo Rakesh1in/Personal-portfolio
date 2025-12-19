@@ -1,7 +1,7 @@
 // Typed Text
 document.addEventListener('DOMContentLoaded', () => {
     const typed = new Typed('.typing-text', {
-        strings: ['Full Stack Developer', 'Insurance Professional', 'Solution Analy'],
+        strings: ['Full Stack Developer', 'Insurance Professional', 'Solution Analyst'],
         typeSpeed: 70,
         backSpeed: 70,
         backDelay: 1000,
@@ -47,3 +47,8 @@ navLinks.querySelectorAll("a").forEach(link => {
 });
 
 
+const aboutSection = document.querySelector("#about");
+
+if (aboutSection) {
+    observer.observe(aboutSection);
+}
