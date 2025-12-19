@@ -20,20 +20,21 @@
 <body>
 
     <!-- header Design -->
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo" style="--i: 1;">Rakesh   <span>Portfolio</span>
-            </a>
+ <nav class="navbar">
+    <a href="#home" class="logo">Rakesh <span>Portfolio</span></a>
 
-            <ul>
-                <li style="--i: 2;"><a href="#" class="active">Home</a></li>
-                <li style="--i: 3;"><a href="#">About</a></li>
-                <li style="--i: 4;"><a href="#">Skills</a></li>
-                <li style="--i: 7;"><a href="#">Contact</a></li>
-            </ul>
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </div>
 
-        </nav>
-    </header>
+    <ul id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
 
 
     <!-- hero section -->
@@ -62,7 +63,7 @@
         </div>
     </section>
     <!-- hero section -->
-    <section id="home" class="hero-container" style="background-color: #006da011;">
+    <section id="about" class="hero-container" style="background-color: #006da011;">
        
         <div class="hero-content hero-content-animation">
            
@@ -108,7 +109,7 @@
                 <span class="skill-badge">React</span>
             </div>
 
-            <h5 class="text-success mb-3">Backend & Solution Design</h5>
+            <h5 class="text-primary mb-3">Backend & Solution Design</h5>
             <div class="mb-4">
                 <span class="skill-badge">Backend Logic</span>
                 <span class="skill-badge">API Development</span>
@@ -117,7 +118,7 @@
                 <span class="skill-badge">Scalable Solutions</span>
             </div>
 
-            <h5 class="text-warning mb-3">Insurance & Domain Knowledge</h5>
+            <h5 class="text-primary mb-3">Insurance & Domain Knowledge</h5>
             <div>
                 <span class="skill-badge">Insurance Operations</span>
                 <span class="skill-badge">Inspection Order Management</span>

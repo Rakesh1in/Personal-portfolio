@@ -31,5 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// MOBILE NAV TOGGLE
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+
+// Close menu on link click
+navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+    });
+});
 
 
