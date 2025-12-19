@@ -160,32 +160,18 @@ section {
 }
 
 .hero-content {
-    max-width: 50%;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-.hero-content h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
+@media (min-width: 769px) {
+    .hero-content {
+        max-width: 50%;
+        text-align: left;
+    }
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.hero-content h2 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.hero-content h2 span {
-    color: var(--global-clr);
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin: 2rem 0;
-}
 
 
 /* Social Icons */
@@ -416,6 +402,7 @@ section {
     font-size: 1.8rem;
     color: #fff;
     cursor: pointer;
+    line-height: 1;
 }
 
 /* MOBILE NAV */
@@ -451,18 +438,11 @@ section {
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+
+body {
+    padding-top: 80px; /* height of navbar */
 }
 
-.hero-content h2 {
-    font-size: clamp(1.2rem, 4vw, 2rem);
-}
-
-.hero-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
 .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -497,5 +477,60 @@ section {
     .project-card,
     .about {
         transform: translateY(20px);
+    }
+}
+@media (max-width: 768px) {
+    .navbar a,
+    .navbar ul li,
+    .hero-content-animation > * {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+.stats .stat:not(:last-child) {
+    border-right: 1px solid var(--light-text-clr);
+}
+
+@media (max-width: 768px) {
+    .stats .stat:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--light-text-clr);
+        padding-bottom: 1rem;
+    }
+}
+@media (max-width: 576px) {
+    .hero-container {
+        min-height: auto;
+        padding: 4rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+}
+.navbar {
+    display: flex;
+    align-items: center;      
+    justify-content: space-between;
+    flex-wrap: nowrap;       
+}
+.logo {
+    font-size: 1.8rem;         
+    line-height: 1;         
+    white-space: nowrap;      
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        padding: 1rem;
     }
 }
